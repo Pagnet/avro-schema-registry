@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:Pagnet/avro.git
+  revision: 48f02eea8a2dacfb6ab96be3242ffc36eb498311
+  branch: 1.9.1
+  glob: lang/ruby/*.gemspec
+  specs:
+    avro (1.9.1)
+      multi_json (~> 1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,8 +56,6 @@ GEM
       rake (>= 10.4, < 14.0)
     arel (9.0.0)
     ast (2.4.0)
-    avro (1.9.1)
-      multi_json
     avro-patches (1.0.1)
       avro (>= 1.9.0, <= 1.9.1)
     avro-resolution_canonical_form (0.2.1)
@@ -258,6 +265,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  avro!
   avro-patches
   avro-resolution_canonical_form (>= 0.2.0)
   avro_turf (>= 0.8.0)

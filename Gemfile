@@ -5,6 +5,7 @@ ruby '2.6.3'
 source 'https://rubygems.org'
 
 gem 'avro-patches'
+gem 'avro', git: 'git@github.com:Pagnet/avro.git', glob: 'lang/ruby/*.gemspec', branch: '1.9.1'
 
 gem 'avro-resolution_canonical_form', '>= 0.2.0'
 gem 'bootsnap', require: false
@@ -29,6 +30,7 @@ end
 
 group :development do
   gem 'annotate'
+
   gem 'avro_turf', '>= 0.8.0', require: false
   gem 'heroku_rails_deploy', '>= 0.4.1', require: false
   gem 'overcommit'
